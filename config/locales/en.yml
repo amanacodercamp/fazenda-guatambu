@@ -20,4 +20,12 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  time:
+    formats:
+      my_own_format: "%Y"
+  hello: "Hello friends"
+  goddbye: "See you later"
+  cabins:
+    index:
+      title: "Our cabins in the woods"
+

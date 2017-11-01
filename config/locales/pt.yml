@@ -1,0 +1,9 @@
+pt:
+  time:
+    formats:
+      my_own_format: "%Y"
+  hello: "Bom dia amigos"
+  goddbye: "Ate mais tarde"
+  cabins:
+    index:
+      title: "Nossos chalés na montanha"

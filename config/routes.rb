@@ -1,24 +1,29 @@
 Rails.application.routes.draw do
 
-  get 'ExploreTheFarm', to: "pages#ExploreTheFarm"
+  #devise here
 
-  get 'activities', to: "pages#activities"
+  scope '(:locale)', locale: /pt|en|fr|es/ do
 
-  get 'products', to: "pages#products"
+    get 'ExploreTheFarm', to: "pages#ExploreTheFarm"
 
-  get 'reservations', to: "pages#reservations"
+    get 'activities', to: "pages#activities"
 
-  get 'about', to: "pages#about"
+    get 'products', to: "pages#products"
 
-  get 'contact', to: "pages#contact"
+    get 'reservations', to: "pages#reservations"
 
-  get 'HostARetreat', to: "pages#HostARetreat"
+    get 'about', to: "pages#about"
 
-  get 'volunteer', to: "pages#volunteer"
+    get 'contact', to: "pages#contact"
 
-  get '/', to: "pages#home"
+    get 'HostARetreat', to: "pages#HostARetreat"
 
-  get 'cabins', to: "cabins#index"
+    get 'volunteer', to: "pages#volunteer"
 
+    get '/', to: "pages#home"
+
+    get 'cabins', to: "cabins#index"
+
+  end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

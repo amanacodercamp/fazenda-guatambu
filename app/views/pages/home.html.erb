@@ -1,2 +1,13 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<h1>
+  <%= t("hello") %>
+</h1>
+
+<p>
+  <%= t("goodbye") %>
+</p>
+
+<p>
+  <%= l(Time.now, format: :short) %>
+</p>
+
+
