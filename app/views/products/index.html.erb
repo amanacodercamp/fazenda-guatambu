@@ -1,7 +1,11 @@
 <h1> All our products </h1>
 
+<%= link_to "Add a product", new_product_path %>
+
 <% @products.each do |product| %>
   <h2><%= link_to product.name, product_path(product) %></h2>
   <p><%= product.category %></p>
-  <p><%= product.description%></p>
+  <p><%= product.description %></p>
+  <p><%= product.price %></p>
+<%= link_to "Remove product", product_path(product), method: :delete %>
 <% end %>
