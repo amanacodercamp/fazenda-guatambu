@@ -1,6 +1,6 @@
 es:
   hello: "Ola amigos"
-  goddbye: "Hasta la vista"
+  goodbye: "Hasta la vista"
   cabins:
     index:
       title: "Nuestras cabanas en la montana"
