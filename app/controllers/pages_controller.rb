@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  def ExploreTheFarm
+  def explore_the_farm
   end
 
   def activities
@@ -17,7 +17,7 @@ class PagesController < ApplicationController
   def contact
   end
 
-  def HostARetreat
+  def host_a_retreat
   end
 
   def volunteer

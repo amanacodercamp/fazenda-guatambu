@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>FazendaGuatambu</title>
-    <%= csrf_meta_tags %>
+<head>
+  <title>FazendaGuatambu</title>
+  <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
-  <body>
-    <%= yield %>
-  </body>
+<body>
+
+
+  <div class="navbar">
+    <%= image_tag "pine-logo.png" %>
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a class="brand" href="#">Fazenda Guatambu</a>
+        <div class="nav-collapse">
+          <ul class="nav">
+            <li><%= link_to "Explore the Farm", explore_the_farm_path %></li>
+            <li><%= link_to "Activities", activities_path %></li>
+            <li><%= link_to "Our Products", products_path %></li>
+            <li><%= link_to "About", about_path %></li>
+            <li><%= link_to "Reservations", reservations_path %></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <%= yield %>
+
+  <p>This is the footer</p>
+
+
+</body>
 </html>
