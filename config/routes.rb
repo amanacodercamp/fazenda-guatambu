@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   scope '(:locale)', locale: /pt|en|fr|es/ do
 
-    get 'ExploreTheFarm', to: "pages#ExploreTheFarm"
+    get 'explore_the_farm', to: "pages#explore_the_farm"
 
     get 'activities', to: "pages#activities"
 
@@ -19,7 +19,7 @@ Rails.application.routes.draw do
 
     get 'contact', to: "pages#contact"
 
-    get 'HostARetreat', to: "pages#HostARetreat"
+    get 'host_a_retreat', to: "pages#host_a_retreat"
 
     get 'volunteer', to: "pages#volunteer"
 
