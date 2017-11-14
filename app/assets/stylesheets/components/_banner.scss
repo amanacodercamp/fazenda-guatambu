@@ -1,25 +1,22 @@
 .banner {
-  height: 100vh;
+  color: white;
+  background-size: cover !important;
+  opacity: 0.8;
+  height: 80vh;
   display: flex;
-  justify-content: space-around;
-  align-items: left;
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), image-url("hortencias.jpg");
-  background-size: cover;
-  opacity: 0.85;
-  h1 {
-    color: white;
-    opacity: 0.6;
-    font-weight: bold;
-    font-size: 45px;
-    margin-top: 220px;
-    margin-left: 230px;
-    margin-bottom: -20px;
+  }
+
+.banner-content {
+  color: white;
+  margin-top: 190px;
+  margin-left: 240px;
+  letter-spacing: 2px;
+  h3 {
+    font-size: 40px;
   }
   p {
-    color: white;
-    opacity: 0.6;
-    font-size: 30px;
-    font-weight: lighter;
-    margin-left: 230px;
+    font-size: 20px;
   }
 }
+
+
