@@ -1,3 +1,45 @@
+<div class="navbar-farm">
+  <!-- Logo -->
+  <a href="/" class="navbar-farm-brand">
+    <%= image_tag "pine-logo.png" %>
+  </a>
+  <%= link_to "Home", "/", class: "navbar-farm" %>
+
+  <!-- Right Navigation -->
+  <div class="navbar-farm-right hidden-xs hidden-sm">
+
+
+    <%= link_to "Explore the Farm", "explore_the_farm.html", class: "navbar-farm-item navbar-farm-link" %>
+    <%= link_to "Our activities", "activities.html", class: "navbar-farm-item navbar-farm-link" %>
+    <%= link_to "About us", "about.html", class: "navbar-farm-item navbar-farm-link" %>
+    <%= link_to "Our products", "products.html", class: "navbar-farm-item navbar-farm-link" %>
+    <%= link_to "Lodging", "lodging.html", class: "navbar-farm-item navbar-farm-link" %>
+
+    <!-- Profile picture with dropdown list -->
+    <div class="navbar-farm-item">
+      <div class="dropdown">
+        <img src="https://kitt.lewagon.com/placeholder/users/ssaunier" class="avatar dropdown-toggle" id="navbar-farm-menu" data-toggle="dropdown">
+        <ul class="dropdown-menu dropdown-menu-right navbar-farm-dropdown-menu">
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Log Out</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dropdown appearing on mobile only -->
+  <div class="navbar-farm-item hidden-md hidden-lg">
+    <div class="dropdown">
+      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-farm-dropdown-menu">
+        <li><a href="#">Host</a></li>
+        <li><a href="#">Trips</a></li>
+        <li><a href="#">Messagese</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
 
 
 
